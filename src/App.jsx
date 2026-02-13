@@ -1,7 +1,8 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import Exp3_1 from './Exp3_1';
-import Exp3_2 from './Exp3_2';
-import Exp3_3 from './Exp3_3';
+// Renaming imports to remove underscores (PascalCase)
+import Exp31 from './Exp31';
+import Exp32 from './Exp32';
+import Exp33 from './Exp33';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
         <Link to="/exp3" style={{ margin: '0 10px' }}>Experiment 3</Link>
       </nav>
       <Routes>
-        <Route path="/exp1" element={<Exp3_1 />} />
-        <Route path="/exp2" element={<Exp3_2 />} />
-        <Route path="/exp3" element={<Exp3_3 />} />
+        {/* Updated component names here to match imports */}
+        <Route path="/exp1" element={<Exp31 />} />
+        <Route path="/exp2" element={<Exp32 />} />
+        <Route path="/exp3" element={<Exp33 />} />
         <Route path="/" element={<div style={{ textAlign: 'center' }}>Welcome! Choose an experiment from the navigation above.</div>} />
       </Routes>
     </div>
